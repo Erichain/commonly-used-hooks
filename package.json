@@ -1,0 +1,20 @@
+{
+  "name": "commonly-used-hooks",
+  "version": "1.0.0",
+  "description": "Commonly used hooks gallery.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erichain/commonly-used-hooks.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erichain/commonly-used-hooks/issues"
+  },
+  "homepage": "https://github.com/Erichain/commonly-used-hooks#readme"
+}
