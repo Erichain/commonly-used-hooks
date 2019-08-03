@@ -1,5 +1,7 @@
 import { useState } from 'react';
 
+export type UseFetchHook = [boolean, any, (...params: any[]) => Promise<any>];
+
 export default (
   onFetch: (...params: any[]) => Promise<any>,
   defaultValue?: any

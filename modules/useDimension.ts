@@ -4,6 +4,21 @@ import { useState, useCallback, useLayoutEffect } from 'react';
 // For more detail: https://developer.mozilla.org/en-US/docs/Web/API/ResizeObserver
 import ResizeObserver from 'resize-observer-polyfill';
 
+export interface RectDimension {
+  width: number;
+  height: number;
+  top: number;
+  left: number;
+  right: number;
+  bottom: number;
+}
+
+export type UseDimensionHook = [
+  string | ((instance: HTMLElement | null) => void),
+  RectDimension,
+  HTMLElement
+];
+
 const getRectDimension = (node: HTMLElement): RectDimension => {
   return node.getBoundingClientRect();
 };

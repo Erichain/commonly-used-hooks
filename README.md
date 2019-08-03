@@ -10,6 +10,18 @@ Commonly used hooks gallery.
 
 ### useRequest
 
+`useRequest` hook is used to handle ajax request.
+Including `loading` status, and `loadData` action.
+
+```typescript
+const fetchList = axios.post('list/api');
+const [listData, loading, loadList] = useRequest(fetchList, []);
+
+useEffect(() => {
+  loadList();
+}, []);
+```
+
 ## License
 
 MIT
