@@ -10,7 +10,7 @@ Commonly used hooks gallery. Inspired by [awesome-react-hooks](https://github.co
 
 ```jsx
 const RectComponent = () => {
-  const [contentRef, contentDimension] = useRequest(fetchList, []);
+  const [contentRef, contentDimension] = useDimension();
 
   const renderContent = () => {
     // render content
